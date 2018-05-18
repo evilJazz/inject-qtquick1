@@ -9,7 +9,7 @@ Run
 
     ./inject-qtquick1.sh <QTSRCDIR>
 
-where <QTSRCDIR> is the root of the extracted Qt source code.
+where QTSRCDIR is the root of the extracted Qt source code.
 
 The script will inject the qtquick1.594.patched directory into the Qt source tree and update the version information and headers as required.
 
