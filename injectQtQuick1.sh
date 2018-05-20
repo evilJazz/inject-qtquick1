@@ -17,6 +17,8 @@ QTQUICKDIR="$QTSRCDIR/qtquick1"
 
 [ ! -f "$QTSRCDIR/qtbase/.qmake.conf" ] && usage
 
+[ -d "$QTQUICKDIR" ] && rm -Rf "$QTQUICKDIR"
+
 cd "$SCRIPT_ROOT"
 cp -R qtquick1.594.patched "$QTQUICKDIR"
 

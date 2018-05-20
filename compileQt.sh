@@ -15,10 +15,8 @@ usage()
 QTSRCDIR=$(realpath "$1")
 [ ! -f "$QTSRCDIR/qtbase/.qmake.conf" ] && usage
 
-DESTDIR=$2
+DESTDIR=$(realpath "$2")
 [ ! -d "$DESTDIR" ] && mkdir -p "$DESTDIR"
-
-DESTDIR=$(realpath "$DESTDIR")
 
 QTVERSION=$(grep "MODULE_VERSION = " "$QTSRCDIR/qtbase/.qmake.conf" | cut -d" " -f 3)
 
