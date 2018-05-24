@@ -26,6 +26,6 @@ QTBUILDDIR=$QTSRCDIR-build
 mkdir -p "$QTBUILDDIR"
 cd "$QTBUILDDIR"
 
-"$QTSRCDIR/configure" --prefix="$DESTDIR" -confirm-license -opensource -nomake examples -nomake tests -skip qtwebengine -icu -strip
+"$QTSRCDIR/configure" --prefix="$DESTDIR" -confirm-license -opensource -nomake examples -nomake tests -skip qtwebengine -strip
 make -j9
 make install
